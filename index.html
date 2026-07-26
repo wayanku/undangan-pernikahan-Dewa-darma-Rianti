@@ -1095,33 +1095,25 @@
             <!-- [PERUBAHAN] Membagi detail acara menjadi 3 kartu terpisah -->
             <div class="event-grid">
                 <div class="event-card hidden anim-fade-in-left" style="--delay: 0.2s;">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                    </div>
-                    <h3 style="font-size: 1.8rem;">Tanggal</h3>
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div>
+                    <h3 style="font-size: 1.8rem;">Tanggal Resepsi</h3>
                     <p id="event-date-text"></p>
                 </div>
+                <!-- [PERUBAHAN] Kartu Hari H Pawiwahan dipindah ke sini -->
+                <div class="event-card hidden anim-fade-in-up" style="--delay: 0.8s;">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                    <h3 style="font-size: 1.8rem;">Hari H Pawiwahan</h3>
+                    <p>Rabu, 19 Agustus 2026</p>
+                </div>
                 <div class="event-card hidden anim-fade-in-up" style="--delay: 0.4s;">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    </div>
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
                     <h3 style="font-size: 1.8rem;">Waktu</h3>
                     <p id="event-time-text"></p>
                 </div>
                 <div class="event-card hidden anim-fade-in-right" style="--delay: 0.6s;">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    </div>
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
                     <h3 style="font-size: 1.8rem;">Lokasi</h3>
                     <p id="event-location-text"></p>
-                </div>
-                <!-- [PERUBAHAN] Kartu baru untuk Hari H Pawiwahan -->
-                <div class="event-card hidden anim-fade-in-up" style="--delay: 0.8s; grid-column: 1 / -1;">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                    </div>
-                    <h3 style="font-size: 1.8rem;">Hari H Pawiwahan</h3>
-                    <p>Rabu, 19 Agustus 2026</p>
                 </div>
             </div>
 
@@ -1191,36 +1183,78 @@
         <section id="hadiah" class="section">
             <h2 class="hidden anim-fade-in-up">Kirim Hadiah</h2>
             <p class="hidden anim-fade-in-up" style="--delay: 0.1s; color: var(--color-text-light);">Doa restu Anda merupakan karunia yang sangat berarti. Namun jika memberi adalah ungkapan tanda kasih, Anda dapat memberi kado secara online.</p>
-            <!-- [PERUBAHAN BESAR] Struktur baru untuk kartu hadiah dengan gaya Kartu Kredit -->
-            <div class="gift-card-container hidden anim-fade-in-up" style="--delay: 0.3s;">
-                <div class="gift-card">
-                    <div class="gift-card-face gift-card-front">
-                        <div class="gift-card-header">
-                            <!-- [PERUBAHAN] Mengganti logo gambar dengan tulisan -->
-                            <span class="bank-logo" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.2rem;">Bank BRI</span>
-                            <div class="card-chip">
-                                <div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div>
-                                <div class="chip-main"></div>
+            
+            <!-- [PERUBAHAN] Wrapper untuk beberapa kartu hadiah, diubah gap menjadi lebih besar -->
+            <div id="gift-cards-wrapper" style="display: flex; flex-direction: column; gap: 3.5rem; align-items: center; margin-top: 2rem;">
+
+                <!-- [PERUBAHAN] Blok untuk Rekening Mempelai Pria -->
+                <div class="gift-account-block hidden anim-fade-in-up" style="--delay: 0.3s; width: 100%; text-align: center;">
+                    <h3 class="gift-account-title">Rekening Mempelai Pria</h3>
+                    <div class="gift-card-container">
+                    <div class="gift-card">
+                        <div class="gift-card-face gift-card-front">
+                            <div class="gift-card-header">
+                                <span class="bank-logo" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.2rem;"></span>
+                                <div class="card-chip">
+                                    <div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div>
+                                    <div class="chip-main"></div>
+                                </div>
+                            </div>
+                            <div class="gift-card-body">
+                                <div style="text-align: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Klik untuk melihat no rekening</div>
+                            </div>
+                            <div class="gift-card-footer">
+                                <div class="card-holder account-name-front"></div>
                             </div>
                         </div>
-                        <div class="gift-card-body">
-                            <div style="text-align: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Klik untuk melihat no rekening</div>
-                        </div>
-                        <div class="gift-card-footer">
-                            <div class="card-holder" id="account-name-front"></div>
+                        <div class="gift-card-face gift-card-back">
+                            <div class="magnetic-strip"></div>
+                            <div class="back-content">
+                                <div class="card-number account-number"></div>
+                                <div class="card-holder account-name"></div>
+                                <button class="copy-button">
+                                    <span class="copy-button-text">Salin</span>
+                                </button>
+                            </div>
+                            <div style="flex-grow: 1;"></div>
                         </div>
                     </div>
-                    <div class="gift-card-face gift-card-back">
-                        <div class="magnetic-strip"></div>
-                        <div class="back-content">
-                            <div class="card-number" id="account-number"></div>
-                            <div class="card-holder" id="account-name"></div>
-                            <button class="copy-button" id="copy-account-button">
-                                <span id="copy-button-text">Salin</span>
-                            </button>
+                </div>
+                </div>
+
+                <!-- [PERUBAHAN] Blok untuk Rekening Mempelai Wanita -->
+                <div class="gift-account-block hidden anim-fade-in-up" style="--delay: 0.5s; width: 100%; text-align: center;">
+                    <h3 class="gift-account-title">Rekening Mempelai Wanita</h3>
+                    <div class="gift-card-container">
+                    <div class="gift-card">
+                        <div class="gift-card-face gift-card-front">
+                            <div class="gift-card-header">
+                                <span class="bank-logo" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.2rem;"></span>
+                                <div class="card-chip">
+                                    <div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div>
+                                    <div class="chip-main"></div>
+                                </div>
+                            </div>
+                            <div class="gift-card-body">
+                                <div style="text-align: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Klik untuk melihat no rekening</div>
+                            </div>
+                            <div class="gift-card-footer">
+                                <div class="card-holder account-name-front"></div>
+                            </div>
                         </div>
-                        <div style="flex-grow: 1;"></div>
+                        <div class="gift-card-face gift-card-back">
+                            <div class="magnetic-strip"></div>
+                            <div class="back-content">
+                                <div class="card-number account-number"></div>
+                                <div class="card-holder account-name"></div>
+                                <button class="copy-button">
+                                    <span class="copy-button-text">Salin</span>
+                                </button>
+                            </div>
+                            <div style="flex-grow: 1;"></div>
+                        </div>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -1408,7 +1442,10 @@
             bride: { name: "Ni Luh Gede Rianti, S.Sos", familyRelation: "Putri dari pasangan", father: "I Ketut Murdana", mother: "Ni Nyoman Mariati" },
                 ceremony: { subject: "Upacara Pawiwahan (Pernikahan) putra-putri kami." }, 
             event: { dateTime: "Aug 18, 2026 16:00:00", day: "Selasa", date: "18", month: "Agustus", year: "2026", time: "16.00 WITA - Selesai", location: "Bonian, Desa Antap, Selemadeg, Tabanan", mapUrl: "https://maps.app.goo.gl/MeJqokCw4GJP8aMR6?g_st=iw" },
-            gift: { bankName: "Bank BRI", bankLogoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/BRI_2020.svg/2560px-BRI_2020.svg.png", accountNumber: "478201005040536", accountName: "DEWA BAGUS MADE DARMA LAKSANA" },
+            gifts: [
+                { bankName: "Bank BRI", accountNumber: "478201005040536", accountName: "DEWA BAGUS MADE DARMA LAKSANA" },
+                { bankName: "Bank BRI", accountNumber: "0320222013899", accountName: "NI LUH GEDE RIANTI" }
+            ],
             quote: { text: `"Devan bhavayatanena te deva bhavayantu vah parasparam bhavayantah sreyah param avapsyatha"`, source: "(Bhagavad Gita 3:11)", translation: "Dengan ini (Yadnya), kami berbakti kepada Hyang Widhi dan dengan ini pula Hyang Widhi memelihara dan mengasihi kamu. Dengan saling memelihara satu sama lain, kamu akan mencapai kebaikan yang maha tinggi." },
             creator: { name: "Story Bali Undangan", instagram: "https://www.instagram.com/storybali?", whatsapp: "https://wa.me/message/RNPBCG25N5V2A1" }
         };
@@ -1649,9 +1686,18 @@
                 document.getElementById('event-time-text').textContent = data.event.time;
                 document.getElementById('event-location-text').textContent = data.event.location;
                 document.getElementById('event-map-link').href = data.event.mapUrl;
-                document.getElementById('account-number').textContent = data.gift.accountNumber.replace(/(\d{4})/g, '$1 ').trim(); // Format dengan spasi
-                document.getElementById('account-name').textContent = data.gift.accountName;
-                document.getElementById('account-name-front').textContent = data.gift.accountName; // [PERUBAHAN BARU]
+
+                // [PERUBAHAN] Mengisi data untuk beberapa kartu hadiah
+                const giftBlocks = document.querySelectorAll('.gift-account-block');
+                data.gifts.forEach((gift, index) => {
+                    if (giftBlocks[index]) {
+                        giftBlocks[index].querySelector('.bank-logo').textContent = gift.bankName;
+                        giftBlocks[index].querySelector('.account-number').textContent = gift.accountNumber.replace(/(\d{4})/g, '$1 ').trim();
+                        giftBlocks[index].querySelector('.account-name').textContent = gift.accountName;
+                        giftBlocks[index].querySelector('.account-name-front').textContent = gift.accountName;
+                    }
+                });
+
                 document.getElementById('creator-credit').innerHTML = `Made with ♡ by <a href="${data.creator.instagram}" target="_blank">${data.creator.name}</a>`;
                 document.getElementById('instagram-link').href = data.creator.instagram;
                 document.getElementById('whatsapp-link').href = data.creator.whatsapp;
@@ -1691,18 +1737,23 @@
                     else { music.pause(); this.classList.remove('playing'); }
                 });
 
-                // [KREASI BARU] Event listener untuk membalik kartu hadiah
-                document.querySelector('.gift-card-container').addEventListener('click', function() {
-                    this.classList.toggle('flipped');
-                });
+                // [PERUBAHAN] Event listener untuk setiap kartu hadiah
+                document.querySelectorAll('.gift-account-block').forEach((block, index) => {
+                    const card = block.querySelector('.gift-card-container');
+                    card.addEventListener('click', function() {
+                        this.classList.toggle('flipped');
+                    });
 
-                document.getElementById('copy-account-button').addEventListener('click', function(e) {
-                    e.stopPropagation(); // Mencegah kartu berbalik saat tombol disalin
-                    navigator.clipboard.writeText(invitationData.gift.accountNumber.replace(/\s/g, ''))
-                    .then(() => {
-                        const buttonText = document.getElementById('copy-button-text');
-                        buttonText.textContent = 'Berhasil Disalin!';
-                        setTimeout(() => { buttonText.textContent = 'Salin'; }, 2000);
+                    const copyButton = card.querySelector('.copy-button');
+                    copyButton.addEventListener('click', function(e) {
+                        e.stopPropagation(); // Mencegah kartu berbalik saat tombol disalin
+                        const accountNumber = invitationData.gifts[index].accountNumber;
+                        navigator.clipboard.writeText(accountNumber.replace(/\s/g, ''))
+                        .then(() => {
+                            const buttonText = this.querySelector('.copy-button-text');
+                            buttonText.textContent = 'Berhasil Disalin!';
+                            setTimeout(() => { buttonText.textContent = 'Salin'; }, 2000);
+                        });
                     });
                 });
                 
