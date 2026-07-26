@@ -1434,7 +1434,7 @@
             bride: { name: "Ni Luh Gede Rianti, S.Sos", familyRelation: "Putri dari pasangan", father: "I Ketut Murdana", mother: "Ni Nyoman Mariati" },
                 ceremony: { subject: "Upacara Pawiwahan (Pernikahan) putra-putri kami." }, 
             event: { dateTime: "Aug 19, 2026 16:00:00", day: "Rabu", date: "19", month: "Agustus", year: "2026", time: "16.00 WITA - Selesai", location: "Bonian, Desa Antap, Selemadeg, Tabanan", mapUrl: "https://maps.app.goo.gl/MeJqokCw4GJP8aMR6?g_st=iw" },
-            gift: { bankName: "BNI", bankLogoUrl: "https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/2560px-BNI_logo.svg.png", accountNumber: "12357474747", accountName: "a.n. Ni Made asik asik jos" },
+            gift: { bankName: "Bank BRI", bankLogoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/BRI_2020.svg/2560px-BRI_2020.svg.png", accountNumber: "478201005040536", accountName: "DEWA BAGUS MADE DARMA LAKSANA" },
             quote: { text: `"Devan bhavayatanena te deva bhavayantu vah parasparam bhavayantah sreyah param avapsyatha"`, source: "(Bhagavad Gita 3:11)", translation: "Dengan ini (Yadnya), kami berbakti kepada Hyang Widhi dan dengan ini pula Hyang Widhi memelihara dan mengasihi kamu. Dengan saling memelihara satu sama lain, kamu akan mencapai kebaikan yang maha tinggi." },
             creator: { name: "Story Bali Undangan", instagram: "https://www.instagram.com/storybali?", whatsapp: "https://wa.me/message/RNPBCG25N5V2A1" }
         };
@@ -1675,6 +1675,10 @@
                 document.getElementById('event-time-text').textContent = data.event.time;
                 document.getElementById('event-location-text').textContent = data.event.location;
                 document.getElementById('event-map-link').href = data.event.mapUrl;
+                document.getElementById('bank-logo-img').src = data.gift.bankLogoUrl;
+                document.getElementById('account-number').textContent = data.gift.accountNumber.replace(/(\d{4})/g, '$1 ').trim(); // Format dengan spasi
+                document.getElementById('account-name').textContent = data.gift.accountName;
+                document.getElementById('account-name-front').textContent = data.gift.accountName; // [PERUBAHAN BARU]
                 document.getElementById('creator-credit').innerHTML = `Made with ♡ by <a href="${data.creator.instagram}" target="_blank">${data.creator.name}</a>`;
                 document.getElementById('instagram-link').href = data.creator.instagram;
                 document.getElementById('whatsapp-link').href = data.creator.whatsapp;
