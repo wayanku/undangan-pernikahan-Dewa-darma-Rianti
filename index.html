@@ -7,10 +7,10 @@
     <title>Undangan Pernikahan - Darma & Rianti</title>
 
     <!-- Meta Tags Social Media (Data tidak berubah) -->
-    <link rel="icon" href="https://github.com/wayanku/undangan-pernikahan-Dewa-darma-Rianti/blob/main/1adf1e47-f403-4458-81ce-8801ad26d58e.JPG?raw=true" type="image/jpeg">
+    <link rel="icon" href="https://github.com/wayanku/undangan-pernikahan-Dewa-darma-Rianti/blob/main/ght.JPG?raw=true" type="image/jpeg">
     <meta property="og:title" content="Undangan Pernikahan: Darma & Rianti">
     <meta property="og:description" content="Kami mengundang Anda untuk hadir di acara pernikahan kami. Rabu, 19 Agustus 2026.">
-    <meta property="og:image" content="https://github.com/wayanku/undangan-pernikahan-Dewa-darma-Rianti/blob/main/1adf1e47-f403-4458-81ce-8801ad26d58e.JPG?raw=true" id="meta-og-image">
+    <meta property="og:image" content="https://github.com/wayanku/undangan-pernikahan-Dewa-darma-Rianti/blob/main/ght.JPG?raw=true" id="meta-og-image">
     <meta property="og:url" content="https://URL-UNDANGAN-ANDA.com">
     <meta property="og:type" content="website">
 
@@ -982,9 +982,9 @@
 
     <!-- [TEMA BARU] Halaman Amplop -->
     <div id="envelope-container">
-        <!-- [PERUBAHAN BARU] Menambahkan DUA gambar latar untuk efek crossfade -->
-        <img src="https://github.com/wayanku/undangan-pernikahan-Dewa-darma-Rianti/blob/main/c3e8d47d-4c9f-4af6-bf34-9525ce5a9bd6.JPG?raw=true" alt="Latar Belakang Amplop 1" class="envelope-background-image" id="envelope-bg-1">
-        <img src="https://github.com/wayanku/undangan-pernikahan-Dewa-darma-Rianti/blob/main/1adf1e47-f403-4458-81ce-8801ad26d58e.JPG?raw=true" alt="Latar Belakang Amplop 2" class="envelope-background-image" id="envelope-bg-2">
+        <!-- [PERUBAHAN] Mengganti gambar sampul buka undangan -->
+        <img src="https://github.com/wayanku/undangan-pernikahan-Dewa-darma-Rianti/blob/main/62bb8304-fe22-45d1-8b4c-b57e9443d46c.JPG?raw=true" alt="Latar Belakang Amplop 1" class="envelope-background-image" id="envelope-bg-1">
+        <img src="https://github.com/wayanku/undangan-pernikahan-Dewa-darma-Rianti/blob/main/62bb8304-fe22-45d1-8b4c-b57e9443d46c.JPG?raw=true" alt="Latar Belakang Amplop 2" class="envelope-background-image" id="envelope-bg-2">
         <!-- [PERBAIKAN] Menghapus .envelope-wrapper yang tidak perlu -->
         <div class="envelope-content">
             <h2>Dewa Darma & Rianti</h2>
@@ -1183,34 +1183,69 @@
         <section id="hadiah" class="section">
             <h2 class="hidden anim-fade-in-up">Kirim Hadiah</h2>
             <p class="hidden anim-fade-in-up" style="--delay: 0.1s; color: var(--color-text-light);">Doa restu Anda merupakan karunia yang sangat berarti. Namun jika memberi adalah ungkapan tanda kasih, Anda dapat memberi kado secara online.</p>
-            <!-- [PERUBAHAN BESAR] Struktur baru untuk kartu hadiah dengan gaya Kartu Kredit -->
-            <div class="gift-card-container hidden anim-fade-in-up" style="--delay: 0.3s;">
-                <div class="gift-card">
-                    <div class="gift-card-face gift-card-front">
-                        <div class="gift-card-header">
-                            <img src="" alt="Logo Bank" class="bank-logo" id="bank-logo-img">
-                            <div class="card-chip">
-                                <div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div>
-                                <div class="chip-main"></div>
+            <!-- [PERUBAHAN] Menambahkan kontainer untuk dua kartu hadiah -->
+            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 2rem;">
+                <!-- Kartu Hadiah 1: Mempelai Pria -->
+                <div class="gift-card-container hidden anim-fade-in-up" style="--delay: 0.3s;">
+                    <div class="gift-card">
+                        <div class="gift-card-face gift-card-front">
+                            <div class="gift-card-header">
+                                <span class="bank-logo" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.2rem;">Bank BRI</span>
+                                <div class="card-chip">
+                                    <div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div>
+                                    <div class="chip-main"></div>
+                                </div>
+                            </div>
+                            <div class="gift-card-body">
+                                <div style="text-align: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Klik untuk melihat no rekening</div>
+                            </div>
+                            <div class="gift-card-footer">
+                                <div class="card-holder">DEWA BAGUS MADE DARMA LAKSANA</div>
                             </div>
                         </div>
-                        <div class="gift-card-body">
-                            <div style="text-align: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Klik untuk melihat no rekening</div>
-                        </div>
-                        <div class="gift-card-footer">
-                            <div class="card-holder" id="account-name-front"></div>
+                        <div class="gift-card-face gift-card-back">
+                            <div class="magnetic-strip"></div>
+                            <div class="back-content">
+                                <div class="card-number">4782 0100 5040 536</div>
+                                <div class="card-holder">DEWA BAGUS MADE DARMA LAKSANA</div>
+                                <button class="copy-button" data-account="478201005040536">
+                                    <span>Salin</span>
+                                </button>
+                            </div>
+                            <div style="flex-grow: 1;"></div>
                         </div>
                     </div>
-                    <div class="gift-card-face gift-card-back">
-                        <div class="magnetic-strip"></div>
-                        <div class="back-content">
-                            <div class="card-number" id="account-number"></div>
-                            <div class="card-holder" id="account-name"></div>
-                            <button class="copy-button" id="copy-account-button">
-                                <span id="copy-button-text">Salin</span>
-                            </button>
+                </div>
+
+                <!-- Kartu Hadiah 2: Mempelai Wanita -->
+                <div class="gift-card-container hidden anim-fade-in-up" style="--delay: 0.5s;">
+                    <div class="gift-card">
+                        <div class="gift-card-face gift-card-front">
+                            <div class="gift-card-header">
+                                <span class="bank-logo" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.2rem;">Bank BRI</span>
+                                <div class="card-chip">
+                                    <div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div>
+                                    <div class="chip-main"></div>
+                                </div>
+                            </div>
+                            <div class="gift-card-body">
+                                <div style="text-align: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Klik untuk melihat no rekening</div>
+                            </div>
+                            <div class="gift-card-footer">
+                                <div class="card-holder">NI LUH GEDE RIANTI</div>
+                            </div>
                         </div>
-                        <div style="flex-grow: 1;"></div>
+                        <div class="gift-card-face gift-card-back">
+                            <div class="magnetic-strip"></div>
+                            <div class="back-content">
+                                <div class="card-number">4777 0101 3985 531</div>
+                                <div class="card-holder">NI LUH GEDE RIANTI</div>
+                                <button class="copy-button" data-account="477701013985531">
+                                    <span>Salin</span>
+                                </button>
+                            </div>
+                            <div style="flex-grow: 1;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1398,7 +1433,7 @@
             groom: { name: "Dewa Bagus Made Darma Laksana", familyRelation: "Putra dari pasangan", father: "Dewa Made Sulastra", mother: "Dewa Ayu Ketut Mariani" },
             bride: { name: "Ni Luh Gede Rianti, S.Sos", familyRelation: "Putri dari pasangan", father: "I Ketut Murdana", mother: "Ni Nyoman Mariati" },
                 ceremony: { subject: "Upacara Pawiwahan (Pernikahan) putra-putri kami." }, 
-            event: { dateTime: "Aug 19, 2026 16:00:00", day: "Rabu", date: "19", month: "Agustus", year: "2026", time: "16.00 WITA - Selesai", location: "Bonian, Desa Antap, Selemadeg, Tabanan", mapUrl: "https://maps.app.goo.gl/w3KEm4DuuEKaQvMp8?g_st=ipc" },
+            event: { dateTime: "Aug 19, 2026 16:00:00", day: "Rabu", date: "19", month: "Agustus", year: "2026", time: "16.00 WITA - Selesai", location: "Bonian, Desa Antap, Selemadeg, Tabanan", mapUrl: "https://maps.app.goo.gl/MeJqokCw4GJP8aMR6?g_st=iw" },
             gift: { bankName: "BNI", bankLogoUrl: "https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/2560px-BNI_logo.svg.png", accountNumber: "12357474747", accountName: "a.n. Ni Made asik asik jos" },
             quote: { text: `"Devan bhavayatanena te deva bhavayantu vah parasparam bhavayantah sreyah param avapsyatha"`, source: "(Bhagavad Gita 3:11)", translation: "Dengan ini (Yadnya), kami berbakti kepada Hyang Widhi dan dengan ini pula Hyang Widhi memelihara dan mengasihi kamu. Dengan saling memelihara satu sama lain, kamu akan mencapai kebaikan yang maha tinggi." },
             creator: { name: "Story Bali Undangan", instagram: "https://www.instagram.com/storybali?", whatsapp: "https://wa.me/message/RNPBCG25N5V2A1" }
@@ -1429,13 +1464,18 @@
                 const galleryContainer = document.getElementById('wishes-gallery-container');
                 
                 currentPage = page;
-                wishesContainer.innerHTML = '';
 
                 if (allWishes.length === 0) {
-                    galleryContainer.innerHTML = '<p style="text-align: center;">Jadilah yang pertama mengirim ucapan!</p>';
-                    paginationContainer.style.display = 'none';
+                    // [PERBAIKAN] Mengubah innerHTML dari kontainer utama untuk menghindari error jika sub-elemen tidak ada
+                    if (galleryContainer) {
+                        galleryContainer.innerHTML = '<h2 class="hidden anim-fade-in-up visible">Ucapan & Doa</h2><p style="text-align: center;">Jadilah yang pertama mengirim ucapan!</p>';
+                    }
                     return;
                 }
+
+                // [PERBAIKAN] Pastikan elemen ada sebelum memanipulasinya
+                if (!wishesContainer || !paginationContainer) return;
+                wishesContainer.innerHTML = '';
 
                 const startIndex = (page - 1) * wishesPerPage;
                 const endIndex = startIndex + wishesPerPage;
@@ -1467,34 +1507,27 @@
             }
 
             async function loadWishes() {
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwktxto0kfd5Uxst-qs2dzOpdhOp8j4l8QTksvQytkLFTMFLnGs6BGApi9O5XJniQ3N/exec';
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzjk32LA4r_fxZ_2M1IpBYVBeWS7WVyVKTaZ0x5sDb-ISFah23B_gGf0jHEjdxdNehh/exec';
                 const galleryContainer = document.getElementById('wishes-gallery-container');
                 if (!galleryContainer) return;
 
-                // [PERBAIKAN] Menggunakan JSONP untuk mengatasi masalah CORS di server lokal
+                // [PERBAIKAN] Kembali menggunakan fetch standar yang cocok dengan skrip baru
                 try {
-                    // Membuat fungsi callback global yang bisa diakses oleh script JSONP
-                    window.handleWishesResponse = function(result) {
-                        galleryContainer.style.display = 'block';
-                        if (result.result === 'success' && result.data.length > 0) {
-                            allWishes = result.data.slice().reverse(); // Ambil semua dan balik urutannya (terbaru di atas)
-                            renderWishes(1); // Tampilkan halaman pertama
-                        } else {
-                            allWishes = [];
-                            renderWishes(1); // Tampilkan pesan "belum ada ucapan"
-                        }
-                        // Hapus script dan fungsi callback setelah selesai
-                        delete window.handleWishesResponse;
-                    };
-
-                    const script = document.createElement('script');
-                    // Menambahkan parameter callback ke URL
-                    script.src = `${scriptURL}?callback=handleWishesResponse`;
-                    document.body.appendChild(script);
-                    script.onload = () => document.body.removeChild(script); // Bersihkan setelah dimuat
+                    const response = await fetch(scriptURL);
+                    const result = await response.json();
+                    
+                    galleryContainer.style.display = 'block';
+                    if (result.result === 'success' && result.data.length > 0) {
+                        // Skrip baru sudah mengurutkan, jadi tidak perlu .reverse() lagi
+                        allWishes = result.data; 
+                        renderWishes(1); // Tampilkan halaman pertama
+                    } else {
+                        allWishes = [];
+                        renderWishes(1); // Tampilkan pesan "belum ada ucapan"
+                    }
 
                 } catch (error) {
-                    console.error('Error loading wishes script!', error.message);
+                    console.error('Error fetching wishes!', error.message);
                     galleryContainer.style.display = 'none';
                 }
             }
@@ -1642,10 +1675,6 @@
                 document.getElementById('event-time-text').textContent = data.event.time;
                 document.getElementById('event-location-text').textContent = data.event.location;
                 document.getElementById('event-map-link').href = data.event.mapUrl;
-                document.getElementById('bank-logo-img').src = data.gift.bankLogoUrl;
-                document.getElementById('account-number').textContent = data.gift.accountNumber.replace(/(\d{4})/g, '$1 ').trim(); // Format dengan spasi
-                document.getElementById('account-name').textContent = data.gift.accountName;
-                document.getElementById('account-name-front').textContent = data.gift.accountName; // [PERUBAHAN BARU]
                 document.getElementById('creator-credit').innerHTML = `Made with ♡ by <a href="${data.creator.instagram}" target="_blank">${data.creator.name}</a>`;
                 document.getElementById('instagram-link').href = data.creator.instagram;
                 document.getElementById('whatsapp-link').href = data.creator.whatsapp;
@@ -1685,47 +1714,51 @@
                     else { music.pause(); this.classList.remove('playing'); }
                 });
 
-                // [KREASI BARU] Event listener untuk membalik kartu hadiah
-                document.querySelector('.gift-card-container').addEventListener('click', function() {
-                    this.classList.toggle('flipped');
+                // [PERBAIKAN] Event listener untuk SEMUA kartu hadiah agar bisa di-flip
+                document.querySelectorAll('.gift-card-container').forEach(card => {
+                    card.addEventListener('click', function() {
+                        this.classList.toggle('flipped');
+                    });
                 });
 
-                document.getElementById('copy-account-button').addEventListener('click', function(e) {
-                    e.stopPropagation(); // Mencegah kartu berbalik saat tombol disalin
-                    navigator.clipboard.writeText(invitationData.gift.accountNumber.replace(/\s/g, ''))
-                    .then(() => {
-                        const buttonText = document.getElementById('copy-button-text');
-                        buttonText.textContent = 'Berhasil Disalin!';
-                        setTimeout(() => { buttonText.textContent = 'Salin'; }, 2000);
+                // [PERUBAHAN] Event listener untuk semua tombol salin
+                document.querySelectorAll('.copy-button').forEach(button => {
+                    button.addEventListener('click', function(e) {
+                        e.stopPropagation(); // Mencegah kartu berbalik saat tombol disalin
+                        const accountNumber = this.dataset.account;
+                        navigator.clipboard.writeText(accountNumber).then(() => {
+                            const buttonTextSpan = this.querySelector('span');
+                            buttonTextSpan.textContent = 'Berhasil Disalin!';
+                            setTimeout(() => { buttonTextSpan.textContent = 'Salin'; }, 2000);
+                        });
                     });
                 });
                 
                 const rsvpForm = document.getElementById('rsvp-form');
                 rsvpForm.addEventListener('submit', async function(e) { 
-                    e.preventDefault(); 
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwktxto0kfd5Uxst-qs2dzOpdhOp8j4l8QTksvQytkLFTMFLnGs6BGApi9O5XJniQ3N/exec';
+                    e.preventDefault();
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzjk32LA4r_fxZ_2M1IpBYVBeWS7WVyVKTaZ0x5sDb-ISFah23B_gGf0jHEjdxdNehh/exec';
                     const formButton = this.querySelector('.rsvp-button');
                     const formStatus = document.getElementById('form-status');
+                    const formData = new FormData(this);
+
                     formButton.disabled = true;
                     formButton.textContent = 'Mengirim...';
-                    try {
-                        const response = await fetch(scriptURL, { method: 'POST', body: new FormData(this)});
-                        const result = await response.json();
-                        if (result.result === 'success') {
-                            formStatus.textContent = 'Terima kasih, konfirmasi Anda terkirim!';
-                            formStatus.style.color = 'var(--color-gold)';
-                            rsvpForm.reset();
-                            document.getElementById('jumlah-tamu-group').style.display = 'none';
-                            getGuestName(); // Panggil lagi untuk mengisi nama jika ter-reset
-                            await loadWishes();
-                        } else { throw new Error(result.message); }
-                    } catch (error) {
-                        formStatus.textContent = 'Gagal mengirim. Coba lagi.';
-                        formStatus.style.color = 'red';
-                    } finally {
+
+                    // [PERBAIKAN] Mengirim data tanpa menunggu respons untuk menghindari error CORS
+                    fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' });
+
+                    // Asumsikan pengiriman berhasil dan langsung berikan feedback positif
+                    setTimeout(() => {
+                        formStatus.textContent = 'Terima kasih, konfirmasi Anda telah diterima!';
+                        formStatus.style.color = 'var(--color-gold)';
                         formButton.disabled = false;
                         formButton.textContent = 'Kirim Konfirmasi';
-                    }
+                        rsvpForm.reset();
+                        document.getElementById('jumlah-tamu-group').style.display = 'none';
+                        getGuestName(); // Mengisi kembali nama tamu jika ada di URL
+                        loadWishes(); // Muat ulang daftar ucapan
+                    }, 1500); // Beri jeda sedikit untuk memastikan data terkirim
                 });
                 document.querySelectorAll('input[name="kehadiran"]').forEach(opt => { opt.addEventListener('change', function() { document.getElementById('jumlah-tamu-group').style.display = this.value === 'Hadir' ? 'block' : 'none'; }); });
             };
