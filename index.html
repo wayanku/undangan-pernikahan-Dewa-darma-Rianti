@@ -1183,69 +1183,35 @@
         <section id="hadiah" class="section">
             <h2 class="hidden anim-fade-in-up">Kirim Hadiah</h2>
             <p class="hidden anim-fade-in-up" style="--delay: 0.1s; color: var(--color-text-light);">Doa restu Anda merupakan karunia yang sangat berarti. Namun jika memberi adalah ungkapan tanda kasih, Anda dapat memberi kado secara online.</p>
-            <!-- [PERUBAHAN] Menambahkan kontainer untuk dua kartu hadiah -->
-            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 2rem;">
-                <!-- Kartu Hadiah 1: Mempelai Pria -->
-                <div class="gift-card-container hidden anim-fade-in-up" style="--delay: 0.3s;">
-                    <div class="gift-card">
-                        <div class="gift-card-face gift-card-front">
-                            <div class="gift-card-header">
-                                <span class="bank-logo" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.2rem;">Bank BRI</span>
-                                <div class="card-chip">
-                                    <div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div>
-                                    <div class="chip-main"></div>
-                                </div>
-                            </div>
-                            <div class="gift-card-body">
-                                <div style="text-align: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Klik untuk melihat no rekening</div>
-                            </div>
-                            <div class="gift-card-footer">
-                                <div class="card-holder">DEWA BAGUS MADE DARMA LAKSANA</div>
+            <!-- [PERUBAHAN BESAR] Struktur baru untuk kartu hadiah dengan gaya Kartu Kredit -->
+            <div class="gift-card-container hidden anim-fade-in-up" style="--delay: 0.3s;">
+                <div class="gift-card">
+                    <div class="gift-card-face gift-card-front">
+                        <div class="gift-card-header">
+                            <!-- [PERUBAHAN] Mengganti logo gambar dengan tulisan -->
+                            <span class="bank-logo" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.2rem;">Bank BRI</span>
+                            <div class="card-chip">
+                                <div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div>
+                                <div class="chip-main"></div>
                             </div>
                         </div>
-                        <div class="gift-card-face gift-card-back">
-                            <div class="magnetic-strip"></div>
-                            <div class="back-content">
-                                <div class="card-number">4782 0100 5040 536</div>
-                                <div class="card-holder">DEWA BAGUS MADE DARMA LAKSANA</div>
-                                <button class="copy-button" data-account="478201005040536">
-                                    <span>Salin</span>
-                                </button>
-                            </div>
-                            <div style="flex-grow: 1;"></div>
+                        <div class="gift-card-body">
+                            <div style="text-align: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Klik untuk melihat no rekening</div>
+                        </div>
+                        <div class="gift-card-footer">
+                            <div class="card-holder" id="account-name-front"></div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Kartu Hadiah 2: Mempelai Wanita -->
-                <div class="gift-card-container hidden anim-fade-in-up" style="--delay: 0.5s;">
-                    <div class="gift-card">
-                        <div class="gift-card-face gift-card-front">
-                            <div class="gift-card-header">
-                                <span class="bank-logo" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.2rem;">Bank BRI</span>
-                                <div class="card-chip">
-                                    <div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div><div class="chip-line"></div>
-                                    <div class="chip-main"></div>
-                                </div>
-                            </div>
-                            <div class="gift-card-body">
-                                <div style="text-align: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Klik untuk melihat no rekening</div>
-                            </div>
-                            <div class="gift-card-footer">
-                                <div class="card-holder">NI LUH GEDE RIANTI</div>
-                            </div>
+                    <div class="gift-card-face gift-card-back">
+                        <div class="magnetic-strip"></div>
+                        <div class="back-content">
+                            <div class="card-number" id="account-number"></div>
+                            <div class="card-holder" id="account-name"></div>
+                            <button class="copy-button" id="copy-account-button">
+                                <span id="copy-button-text">Salin</span>
+                            </button>
                         </div>
-                        <div class="gift-card-face gift-card-back">
-                            <div class="magnetic-strip"></div>
-                            <div class="back-content">
-                                <div class="card-number">4777 0101 3985 531</div>
-                                <div class="card-holder">NI LUH GEDE RIANTI</div>
-                                <button class="copy-button" data-account="477701013985531">
-                                    <span>Salin</span>
-                                </button>
-                            </div>
-                            <div style="flex-grow: 1;"></div>
-                        </div>
+                        <div style="flex-grow: 1;"></div>
                     </div>
                 </div>
             </div>
@@ -1675,7 +1641,6 @@
                 document.getElementById('event-time-text').textContent = data.event.time;
                 document.getElementById('event-location-text').textContent = data.event.location;
                 document.getElementById('event-map-link').href = data.event.mapUrl;
-                document.getElementById('bank-logo-img').src = data.gift.bankLogoUrl;
                 document.getElementById('account-number').textContent = data.gift.accountNumber.replace(/(\d{4})/g, '$1 ').trim(); // Format dengan spasi
                 document.getElementById('account-name').textContent = data.gift.accountName;
                 document.getElementById('account-name-front').textContent = data.gift.accountName; // [PERUBAHAN BARU]
@@ -1718,23 +1683,18 @@
                     else { music.pause(); this.classList.remove('playing'); }
                 });
 
-                // [PERBAIKAN] Event listener untuk SEMUA kartu hadiah agar bisa di-flip
-                document.querySelectorAll('.gift-card-container').forEach(card => {
-                    card.addEventListener('click', function() {
-                        this.classList.toggle('flipped');
-                    });
+                // [KREASI BARU] Event listener untuk membalik kartu hadiah
+                document.querySelector('.gift-card-container').addEventListener('click', function() {
+                    this.classList.toggle('flipped');
                 });
 
-                // [PERUBAHAN] Event listener untuk semua tombol salin
-                document.querySelectorAll('.copy-button').forEach(button => {
-                    button.addEventListener('click', function(e) {
-                        e.stopPropagation(); // Mencegah kartu berbalik saat tombol disalin
-                        const accountNumber = this.dataset.account;
-                        navigator.clipboard.writeText(accountNumber).then(() => {
-                            const buttonTextSpan = this.querySelector('span');
-                            buttonTextSpan.textContent = 'Berhasil Disalin!';
-                            setTimeout(() => { buttonTextSpan.textContent = 'Salin'; }, 2000);
-                        });
+                document.getElementById('copy-account-button').addEventListener('click', function(e) {
+                    e.stopPropagation(); // Mencegah kartu berbalik saat tombol disalin
+                    navigator.clipboard.writeText(invitationData.gift.accountNumber.replace(/\s/g, ''))
+                    .then(() => {
+                        const buttonText = document.getElementById('copy-button-text');
+                        buttonText.textContent = 'Berhasil Disalin!';
+                        setTimeout(() => { buttonText.textContent = 'Salin'; }, 2000);
                     });
                 });
                 
